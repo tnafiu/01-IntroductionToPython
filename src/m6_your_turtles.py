@@ -2,13 +2,13 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Toluwa Nafiu.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
-
+import rosegraphics as rg
 ###############################################################################
 # TODO: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
@@ -27,3 +27,30 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+alex = rg.SimpleTurtle('turtle')
+jimbo = rg.SimpleTurtle('turtle')
+alex.pen = rg.Pen('green', 10)
+jimbo.pen = rg.Pen('blue', 10)
+
+size = 156
+
+for k in range(12):
+    alex.draw_square(size)
+
+    alex.pen_up()
+    alex.right(45)
+    alex.forward(15)
+    alex.left(45)
+
+    alex.pen_down()
+
+    jimbo.draw_square(size)
+
+    jimbo.pen_up()
+    jimbo.forward(25)
+    jimbo.right(45)
+    jimbo.forward(25)
+    jimbo.left(45)
+
+    jimbo.pen_down()
+    size = size - 12
