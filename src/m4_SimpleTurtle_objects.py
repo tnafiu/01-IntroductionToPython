@@ -127,7 +127,7 @@ boris.left(90)
 boris.forward(200)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -153,9 +153,15 @@ boris.forward(200)
 ###############################################################################
 macy = rg.SimpleTurtle('turtle')
 macy.pen = rg.Pen('blue', 10)
+macy.speed = 10
+macy.forward(20)
+macy.right(90)
+macy.forward(20)
+macy.right(90)
+macy.forward(20)
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
